@@ -1,0 +1,387 @@
+:root{
+     --button-color: #235492;
+     --titlescolor: #e2f5fc;
+     font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+     text-decoration: none;
+     color: var(--titlescolor); 
+}
+html{
+     scrollbar-color: var(--button-color) #0a2148ff;
+}
+a{
+     color: var(--titlescolor);
+}
+h1{
+     font-size: 2.5rem;
+     font-weight: bold;
+}
+h2{
+     font-size: 2rem;
+}
+h3{
+     font-size: 1.7rem;
+}
+h4{
+     font-size: 1rem;
+}
+body{
+     background-image: linear-gradient(180deg, #0a2148ff 0%, #153765ff 50%, #163c6dff 100%);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: auto;
+     overflow: hidden;
+     overflow-y: auto;
+     width: 100vw;
+     min-height: 98vh;
+}
+.home{
+     background-image: url(../img/banners/bannerpc.png);
+     background-size: cover;
+     width: 100vw;
+     min-height: 100vh;
+     overflow: hidden;
+     overflow-y: hidden;
+}
+header{
+     display: flex;
+     justify-content: space-between;
+     margin: 15px;
+     overflow: hidden;
+     flex-wrap: nowrap;
+}
+nav{
+     display: flex;
+     gap: 10px
+}
+nav a{
+     background-color: var(--button-color);
+     line-height: 30px;
+     width: 5.8rem;
+     text-align: center;
+     border-radius: 30px;
+     box-shadow: 0px 4px rgba(0, 0, 0, 0.25); 
+}
+nav a:hover{
+     background-color: #316EAF;
+}
+.active-link{
+     background-color: #316EAF;
+}
+.contatos{ 
+     display: flex;
+     gap: 10px;
+}
+.contatos .fa-linkedin-in{ 
+     color: #235492;
+     background-color: #e2f5fc;
+     width: 20px;
+     line-height: 20px;
+     border: #235492  3px solid;
+     border-radius: 50px;
+     text-align: center;
+}
+.contatos .fa-github{ 
+     color: #e2f5fc;
+     background-color: #235492;
+     border-radius: 50px;
+     border: #235492  3px solid;
+     font-size: 20px;
+}
+.textos{
+     text-align: left;
+     display: flex;
+     flex-direction: column;
+     margin-left: 5vw;
+     height: 80vh;
+     justify-content: center;
+     gap: 9px;
+}
+.botoes{
+     display: flex;
+     gap: 12px;
+}
+.botoes a{
+     background-color: var(--button-color);
+     width: 10rem;
+     text-align: center;
+     border-radius: 20px;
+     line-height: 2.8rem;
+}
+.botoes a:hover{
+     background-color: #316EAF;
+}
+.menu-button{
+     display: none;
+}
+.container-sobre{
+     display: flex;
+}
+.textos-sobre{
+     justify-content: center;
+     height: 90vh;
+     display: flex;
+     flex-direction: column;
+     gap: 1vh;
+     margin: 0 0 0 32px;
+}
+.imagem-sobre{
+     height: 93vh;
+     display: flex;
+}
+.imagem-sobre img{
+     max-height: 93vh;
+     max-width: 50vw;
+}
+.projetos{
+     height: 100vh;
+     overflow-y: hidden;
+}
+.projetos main{
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     height: 85vh;
+     padding: 5vh;
+     gap: 5vh;
+     align-items: center;
+}
+.card{
+     text-align: left;
+     display: flex;
+     flex-direction: column;
+     background-image: linear-gradient(180deg, #235492 0%, #316EAF 100%);
+     height: 35vh;
+     aspect-ratio: 10 / 12;
+     padding: 1vw;
+     border-radius: 10px;
+     gap: 5px;
+     overflow: hidden;
+}
+.card h3{
+     overflow: hidden;
+}
+.img-projeto{
+     background-color: var(--button-color);
+     align-self: center;
+     width: 100%;
+     aspect-ratio: 16 / 9;
+}
+.img-projeto img{
+     width: 100%;
+     align-self: center;
+     border-radius: 10px;
+     aspect-ratio: 16 / 9;
+}
+.descricao{
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+}
+.card-tecnologias{
+     display: flex;
+     overflow-x: hidden;
+     flex-wrap: nowrap;
+}
+.card-tecnologias img{
+     width: 3vw;
+}
+.card-botoes{
+     height: 50%;
+     display: flex;
+     gap: 0.3rem;
+}
+.descricao a{
+     background-color: var(--button-color);
+     line-height: 40px;
+     width: 50%;
+     text-align: center;
+     border-radius: 30px;
+     box-shadow: 0px 4px rgba(0, 0, 0, 0.25); 
+}
+.descricao a:hover{
+     background-color: #316EAF;
+}
+.habilidades{
+     text-align: left;
+     margin-top: 7vh;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 5vh;
+}
+.oq-faco{
+     display: flex;
+     width: 80vw;
+     gap: 3VW;
+}
+.oq-faco-textos{
+     display: flex;
+     flex-direction: column;
+}
+.oq-faco-textos h2{
+     font-weight: bold;
+}
+.tecnologias{
+     display: flex;
+     flex-wrap: wrap;
+     width: 70vw;
+     justify-content: center;
+     gap: 3vw;
+}
+.tecnologias img{
+     width: 7vw;
+}
+.main-contatos{
+     text-align: left;
+     display: flex;
+     flex-direction: column;
+     margin-inline: auto;
+     width: 80vw;
+     word-wrap: break-word;
+     margin-top: 10vh;
+     gap: 3vh;
+}
+@media screen and (max-width: 1024px) and (orientation: portrait) {
+     .home{
+          background-image: url(../img/banners/bannertablet.png);
+     }
+     .textos{
+          align-items: center;
+          width: 100vw;
+          margin: 10vh auto;
+     }
+     .botoes{
+          margin-top: 50vh;
+          gap: 5vw;
+     }
+     .botoes a{
+          width: 10rem;
+     }
+     .container-sobre{
+          flex-direction: column;
+     }
+     .textos-sobre{
+          align-items: center;
+          height: 60vh;
+          display: flex;
+          flex-direction: column;
+          width: 90vw;
+          gap: 1vh;
+          text-align: center;
+     }
+     .imagem-sobre{
+          height: auto;
+          display: flex;
+     }
+     .imagem-sobre img{
+          max-height: 30vh;
+          max-width: 50vw;
+          margin-inline: auto;
+     }
+     .imagem-sobre{
+          width: 100vw;
+     }
+     .projetos{
+          height: auto;
+          overflow-y: auto;
+     }
+     .projetos main{
+          height: 120vh;
+          padding: 3vh 0;
+     }
+     .card{
+          gap: 15px;
+     }
+     .card-tecnologias img{
+          width: 20%;
+     }
+     .descricao{
+          gap: 15px;
+     }
+     .habilidades{
+          margin: 10vh auto;
+          width: 80vw;
+     }
+     .habilidades h1{
+          text-align: center;
+     }
+     .oq-faco{
+          flex-direction: column;
+          gap: 5vh;
+     }
+     .sobre{
+          overflow-y: hidden;
+     }
+     .tecnologias img{
+          width: 15vw;
+     }
+    
+   }
+@media screen and (max-width: 480px) and (orientation: portrait) {
+     .home{
+          background-image: url(../img/banners/bannercelular.png);
+     }
+     nav{
+          display: flex;
+          flex-direction: column;
+          left: 0px;
+          position: absolute;
+          width: 100vw;
+          gap: 0;
+          top: -100vh;
+          transition: top 0.5s;
+     }
+     .nav--active{
+          top: 7vh;
+          transition: top 0.5s;
+     }
+     nav a{
+          background-color: rgba(0, 0, 0, 0.4);
+          line-height: 13vh;
+          width: auto;
+          text-align: center;
+          border-radius: 0;
+          box-shadow: none; 
+     }
+     .active-link{
+          background-color: rgba(0, 0, 0, 0.4);
+     }
+     .projetos h3{
+          font-size: 1rem;
+     }
+     .sobre h3{
+          font-size: 1.2rem;
+     }
+     .imagem-sobre img{
+          max-height: 30vh;
+          max-width: 50vw;
+          margin-inline: auto;
+     }
+     .imagem-sobre{
+          width: 100vw;
+     }
+     .projetos{
+          height: auto;
+     }
+     .projetos main{
+          height: auto;
+          padding: 0px;
+          padding-bottom: 5vh;
+     }
+     .card{
+          height: 45vh;
+     }
+     .contatos{
+          display: none;
+     }
+     .menu-button{
+          display: block;
+          background-color: transparent;
+          border: 0;
+          color: var(--titlescolor);
+          font-size: x-large;
+     }
+     .card-tecnologias img{
+          width: 20%;
+     }
+}
